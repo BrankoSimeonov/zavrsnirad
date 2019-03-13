@@ -114,3 +114,12 @@ footer a{
   h4 {
       color:rgb(241, 192, 86);
   }
+  
+
+   #snippet:hover {
+    -webkit-box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
+    -moz-box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
+    box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
+    transition: box-shadow 0.6s ease-in-out;
+}
+  
