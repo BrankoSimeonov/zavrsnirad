@@ -99,7 +99,14 @@
                      }
 					 
 					 function onsub() {
-					 location.href = 'index.html';
+               var ime = document.getElementById("ime").value;
+                var password = document.getElementById("password").value;
+                var email = document.getElementById("email").value;
+                if(ime==null || ime=="",password==null || password=="",email==null || email==""){
+                  
+                }else{
+                  location.href = 'index.html';
+                }
 					 }
 //JQ login empty field checker
 $(document).ready(function() {
@@ -133,17 +140,17 @@ alert("Please Fill All Fields.");
 
                 <div class="form-group">
                         <label for="exampleFormControlInput1">Korisnicko ime</label>
-                        <input type="text" class="form-control" id="ime" placeholder="ime korisnika" disabled spellcheck="false">
+                        <input type="text" class="form-control" id="ime" placeholder="ime korisnika" disabled spellcheck="false" required>
                       </div>
 
                       <div class="form-group">
                             <label for="exampleFormControlInput1">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="password" disabled spellcheck="false">
+                            <input type="password" class="form-control" id="password" placeholder="password" disabled spellcheck="false" required>
                           </div>
 
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Email address</label>
-                  <input type="email" class="form-control" id="email" placeholder="vasmail@example.com" disabled spellcheck="false">
+                  <input type="email" class="form-control" id="email" placeholder="vasmail@example.com" disabled spellcheck="false" required>
                 </div>
 
           
