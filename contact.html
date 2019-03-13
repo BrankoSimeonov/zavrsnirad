@@ -33,7 +33,84 @@
 	</nav>
 <!-- End Navigation-->
 
-<!-- End landing page-->
+<div class="container-fluid tekst">
+<!--map-->
+
+  <iframe class="w-100 mt-3" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6666.180420044627!2d20.394882359363628!3d45.37425752928737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1552467796650" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 
+<!--Section-->
+
+<section class="mb-4">
+
+<!--Section heading-->
+
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Kontaktirajte nas</h2>
+
+<!--Section description-->
+
+  <p class="text-center w-responsive mx-auto mb-5">Ukoliko imate pitanje pošaljite nam poruku direktno.</p>
+
+  <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Ime</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Email</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Predmet poruke</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Tekst poruke</label>
+                      </div>
+                  </div>
+              </div>
+          </form>
+
+          <div class="text-center text-md-center">
+              <a class="btn btn-primary w-50" onclick="document.getElementById('contact-form').submit();">Pošalji</a>
+          </div>
+          <div class="status"></div>
+      </div>
+
+      <!--tel. mail-->
+
+      <div class="col-md-3 text-center">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+ 01 234 567 89</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p><a href="#">contact@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+</div>
+  <!-- End landing page-->
 <!-- Footer-->
 <footer>
     <div class="container-fluid">
