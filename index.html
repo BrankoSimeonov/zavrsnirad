@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/fav-icon.png"/>
     <title>Home</title>
+    <script>
+	function func1() {
+	var ime = localStorage.getItem("ime");
+        document.getElementById('welcome').innerHTML = "Dobrodošao" + " " + ime + " " + "na naš sajt";
+            }
+        window.onload=func1;
+	</script>
 </head>
 <body>
 <!-- Navigation-->
@@ -45,7 +52,7 @@
     <div class="container">
         <div class="row narrow">
                 <div class="col-md-12 tekst">
-                    <h3 class="text-center mb-3">Neki naslov</h3>
+                    <h3 class="text-center mb-3" id="welcome"></h3>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum incidunt dicta vitae quibusdam tenetur, consequatur laudantium vero nihil sit quos similique labore nostrum vel molestias.</p>
                 </div>
         </div>
