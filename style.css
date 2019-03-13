@@ -5,6 +5,7 @@ html, body{
     margin: 60px 0 0 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.7;
 }
 
 .navbar{
@@ -121,5 +122,9 @@ footer a{
     -moz-box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
     box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
     transition: box-shadow 0.6s ease-in-out;
+}
+
+.indent{
+    text-indent: 3em;
 }
   
