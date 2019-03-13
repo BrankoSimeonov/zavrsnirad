@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="img/fav-icon.png"/>
     <title>Kontakt</title>
+    <script>
+        function func2() {
+        var ime = localStorage.getItem("ime");
+        var email = localStorage.getItem("email");
+            document.getElementById('name').value = ime;
+            document.getElementById('email').value = email;
+                }
+            window.onload=func2;
+        </script>
 </head>
 <body>
 <!-- Navigation-->
