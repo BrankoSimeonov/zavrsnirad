@@ -96,3 +96,21 @@ footer a{
     border-top: .2rem solid #666b71;
     margin-top: 2.5rem;
   }
+
+  #malanavigacija {
+      color:rgb(241, 192, 86);
+      
+  }
+  #sljivovica {
+      color:white;
+      text-emphasis: wrap;
+      
+  }
+
+  .malaslika {
+      float: left;
+  }
+
+  h4 {
+      color:rgb(241, 192, 86);
+  }
