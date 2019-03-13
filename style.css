@@ -61,7 +61,7 @@ ul li a:hover:before{
 }
 /* landing page */
 .wrap{
-    background-image: url(img/img-landing.jpeg);
+    background-image: url(img/img-landing.JPG);
     background-size: cover;
     width: 100%;
     height: 50vh;
