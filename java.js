@@ -70,3 +70,10 @@ alert("Molimo Vas popunite sva polja!");
 }
 });
 });
+//index ucitava ls
+
+function func1() {
+	var ime = localStorage.getItem("ime");
+        document.getElementById('welcome').innerHTML = "Dobro došao" + " " + ime + " " + "na naš sajt";
+            }
+       
