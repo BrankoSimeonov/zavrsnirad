@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="rakija" content="proizvodnja rakije, konzumiranje rakije, rakija">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="img/fav-icon.png"/>
+    <title>404 ERROR</title>
+    <script>
+	function func1() {
+	var ime = localStorage.getItem("ime");
+        document.getElementById('welcome').innerHTML = "Dobro došao" + " " + ime + " " + "na naš sajt";
+            }
+       
+	</script>
+</head>
+<body onload="func1()">
+<!-- Navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="">naslovna</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="proizvodi.html">proizvodi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerija.html">galerija</a></li>
+                    <li class="nav-item"><a class="nav-link" href="priznanja.html">priznanja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="onama.html">o nama</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+<!-- End Navigation-->
+
+<section>
+    <div class="container">
+        <div class="row narrow">
+                <div class="col-md-12 tekst">
+                    <h3 class="text-center mb-3" id="error" >Error 404</h3>
+                    <p class="text-center">Malo ste zalutali...ajd sad polako uhvati me za ruku...drž se...idemo nazad do šanka
+                    </p>
+                </div>
+                <div class="row narrow">
+                        <div class="col-md-12 tekst centriranje">
+                   <a href="index.html"> <button type="button" class="btn btn-primary">Vadi me odavde</button></a>
+                    </div>
+                </div>
+        </div>
+      
+<!-- End landing page-->
+
+
+
+
+
+
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->   
+</body>
+</html>
