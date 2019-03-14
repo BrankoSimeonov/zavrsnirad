@@ -171,3 +171,8 @@ td {
   text-align: center;
 }
 /*kraj login stil*/
+.grow img { transition: all .4s ease-in-out; }
+.grow:hover { 
+  cursor: pointer;
+  transform: scale(1.1); 
+}
