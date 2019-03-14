@@ -128,3 +128,11 @@ footer a{
     text-indent: 3em;
 }
   
+#error {
+    font-size: 10vw;
+}
+
+.centriranje {
+    display: flex;
+    justify-content: center;
+  }
