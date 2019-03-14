@@ -118,6 +118,7 @@ footer a{
   
 
    #snippet:hover {
+       cursor: pointer;
     -webkit-box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
     -moz-box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
     box-shadow:inset 0px 0px 0px 2px rgb(241, 192, 86);
