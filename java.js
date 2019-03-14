@@ -74,6 +74,13 @@ alert("Molimo Vas popunite sva polja!");
 
 function func1() {
 	var ime = localStorage.getItem("ime");
-        document.getElementById('welcome').innerHTML = "Dobro došao" + " " + ime + " " + "na naš sajt";
+    document.getElementById('welcome').innerHTML = "Dobro došao" + " " + ime + " " + "na naš sajt";
             }
        
+//kontakt ucitava ls
+function func2() {
+    var ime = localStorage.getItem("ime");
+    var email = localStorage.getItem("email");
+    document.getElementById('name').value = ime;
+    document.getElementById('email').value = email;
+         }
