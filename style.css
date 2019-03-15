@@ -171,10 +171,14 @@ td {
   text-align: center;
 }
 /*kraj login stil*/
+.grow img {
+  opacity: 0.5;
+}
 
 .grow img:hover { 
   cursor: pointer;
   transform: scale(1.1); 
+  opacity: 1.0;
   transition: all .2s ease-in-out;
 }
 
