@@ -98,3 +98,6 @@ function skok2() {
 function skok3() {
   window.location = "contact.html";
 }
+
+
+
