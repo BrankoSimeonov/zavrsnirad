@@ -98,6 +98,6 @@ function skok2() {
 function skok3() {
   window.location = "contact.html";
 }
-
-
-
+function skok4() {
+  window.location = " not-found-page.html";
+}

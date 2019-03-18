@@ -61,8 +61,8 @@ ul li a:hover:before {
   transform-origin: right;
   transform: scaleX(1);
 }
-ul li a::after{
-  content: '';
+ul li a::after {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -74,7 +74,7 @@ ul li a::after{
   transform: scaleX(0);
   z-index: -1;
 }
-ul li a:hover::after{
+ul li a:hover::after {
   transition: transform 0.5s;
   transform-origin: left;
   transform: scaleX(1);
@@ -119,14 +119,10 @@ hr.socket {
 }
 /*proizvodi*/
 
-.wrapper{
-  
+.wrapper {
   /*height: 100vh;*/
   padding: 10px;
   margin: 20px;
-}
-.flasa{
-  height: 80%;
 }
 .proizvodiText {
   color: white;
@@ -192,69 +188,67 @@ td {
   opacity: 0.5;
 }
 
-.grow img:hover { 
+.grow img:hover {
   cursor: pointer;
-  transform: scale(1.1); 
-  opacity: 1.0;
-  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 
 .linktext {
-	color:rgb(241, 192, 86);
+  color: rgb(241, 192, 86);
 }
 
 /* contact page */
-.btn{
+.btn {
   background: rgb(245, 234, 208);
   border: 1px solid rgb(245, 234, 208);
-  color: #000!important;
+  color: #000 !important;
 }
-.btn:hover{
+.btn:hover {
   background: rgb(241, 192, 86);
-  color: #000!important;
+  color: #000 !important;
   border: 1px solid rgb(241, 192, 86);
 }
-.btn:disabled{
+.btn:disabled {
   background: rgb(245, 234, 208);
   border: 1px solid rgb(245, 234, 208);
-  color: #000!important;
+  color: #000 !important;
 }
-.mail{
+.mail {
   color: rgb(245, 234, 208);
 }
-.mail:hover{
+.mail:hover {
   color: rgb(241, 192, 86);
 }
 
 /*gallery*/
-.wraper{
+.wraper {
   max-width: 920px;
   margin: auto;
   border: #fff solid 3px;
   background: #fff;
-  
 }
 
-.main-img img, .imgs img{
+.main-img img,
+.imgs img {
   width: 100%;
 }
-.imgs{
+.imgs {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   cursor: pointer;
 }
 
-
 /* animation*/
-@keyframes fadeIn{
-  to{
-      opacity: 1;
-
+@keyframes fadeIn {
+  to {
+    opacity: 1;
   }
 }
 
-.fade-in{
+.fade-in {
   opacity: 0;
   animation: fadeIn 0.5s ease-in 1 forwards;
 }
