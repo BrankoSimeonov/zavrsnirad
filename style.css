@@ -108,9 +108,10 @@ footer a {
 footer svg.svg-inline--fa {
   font-size: 2.2rem;
   margin: 1.2rem 0.3rem 0 0;
+  color: rgb(245, 234, 208);
 }
 footer svg.svg-inline--fa:hover {
-  color: #fff !important;
+  color: rgb(241, 192, 86)!important;
 }
 hr.socket {
   width: 100%;
