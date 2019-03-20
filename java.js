@@ -49,7 +49,7 @@ function onsub() {
     email == null || email == "")
   ) {
   } else {
-    location.href = "index.html";
+    location.href = "naslovna.html";
   }
 }
 //JQ login empty field checker

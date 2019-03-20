@@ -15,10 +15,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="java.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/fav-icon.png" />
-    <title>O Nama</title>
+    <title>Home</title>
   </head>
-  <body>
+  <body onload="func1()">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -34,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link " href="naslovna.html">naslovna</a>
+              <a class="nav-link active" href="">naslovna</a>
             </li>
 
             <li class="nav-item">
@@ -43,9 +44,9 @@
             <li class="nav-item">
               <a class="nav-link" href="galerija.html">galerija</a>
             </li>
-            
+           
             <li class="nav-item">
-              <a class="nav-link active" href="onama.html">o nama</a>
+              <a class="nav-link" href="onama.html">o nama</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">kontakt</a>
@@ -56,90 +57,55 @@
       </div>
     </nav>
     <!-- End Navigation-->
-
     <!-- Start landing page-->
-
     <section>
       <div class="container-fluid">
         <div class="wrap"></div>
       </div>
     </section>
-
     <!-- End landing page-->
-
-    <!-- Text area-->
-
-    <section class="mt-4">
+    <section>
       <div class="container">
-        <div class="row">
+        <div class="row narrow">
           <div class="col-md-12 tekst">
-            <h3 class="text-center mb-3">PRIČA O RAKIJI</h3>
+            <h3 class="text-center mb-3" id="welcome"></h3>
             <p class="text-center">
-              Rakija je neraskidivo vezana za srpsku kulturu i istoriju. Tehnika
-              proizvodnje rakije je zaživela u Srbiji krajem XIV veka. Postoje
-              materijalni dokazi da su prve srpske rakije pravljene od vinske
-              komine. Rakija je od tada uvek pratila srpski narod, i u dobrim i
-              u zlim vremenima. Prilikom povlačenja stanovništva pod naletom
-              osvajačkih vojski, rakiju je bilo najlakše transportovati, nije
-              bila zahtevna za proizvodnju i čuvanje u vremenima nemaštine.
-              Ukratko, rakija je delila sudbinu naroda.Zbog toga se širenje
-              kulture rakije vršilo nauštrb drugih alkoholnih pića. Dodatni
-              podsticaj širenju rakije u Srbiji je bilo širenje filoksere po
-              vinogradima krajem XIX veka. Od tada, iako vinogradi nisu nikada u
-              potpunosti nestali, voćna rakija (prvenstveno šljivovica) je
-              zadržala primat na tradicionalnoj srpskoj sofri
-            </p>
-            <p class="text-center">
-              U Srbiji, rakija je dostigla kultni status. Ona je pratilac čoveka
-              u svakoj situaciji. Prija i kada je pijemo u društvu a i kada
-              želimo da samujemo. Ona je istovremeno i član porodice i zemljak,
-              i kum i najbolji prijatelj. Čak i kada je mučenica, saosećamo sa
-              njom jer znamo koliko treba “gnječiti i mučiti” voće da bi od
-              njega stvorili rakiju.
-            </p>
-            <p class="text-center">
-              Drago nam je što smo deo tog novog talasa koji srpsku rakiju
-              pretvara u alkoholno piće vrhunskog kvaliteta kojim se možemo
-              ponositi. Naš pristup je lako razumljiv: odabrali smo voće
-              vrhunskog kvaliteta, primenili smo modernu tehnologiju koja na
-              najbolji način čuva prirodne arome voća, a naš tehnolog je
-              pažljivo odredio jačinu rakije kako bi celokupni doživljaj naših
-              rakija bio skladan i autentičan.
+              Dragi gosti, ljubitelji žestoke kapljice želimo vam ugodan boravak
+              na našem sajtu. Obilje detaljnih opisa i bogata foto galerija
+              utoliće vašu žeđ za informacijama o procesu pripreme voćnih
+              rakija. Dok za onu drugu vrstu žeđi molimo vas da posetite
+              <b>Kontakt</b> stranu i ostavite vaše podatke, naš stručni tim
+              webmastera će dati sve od sebe da u što kraćem roku okvasite grlo.
+              Nazdravlje!
             </p>
           </div>
         </div>
-
-        <div class="row mt-2">
-          <div class="col-md-6 mb-3">
-            <img src="img/destilery.jpg" alt="destilerija" class="w-100" />
-          </div>
-
-          <div class="col-md-6 tekst">
-            <h3 class="text-center mb-3">Priča o nama</h3>
+        <div class="row">
+          <div class="col-md-4 tekst" id="snippet" onclick="skok1()">
+            <h3 class="text-center mb-3 mt-3" class="naslov">Proizvodi</h3>
             <p class="text-center">
-              Prvi redovi rakijske istorije ispisani su u Itebeju, a sve je
-              zapravo počelo još mnogo pre zvaničnog osnivanja destilerije, u
-              željama njenih osnivača. U ovoj priči nema legendi i mitova, niti
-              preterivanja. Sve je bilo i sada je, tačno onako kako treba da
-              bude. Mala manufaktura prerasla je u proizvodnju limitiranih
-              serija vrhunskih rakija. Kao i u svakoj pravoj priči – danas
-              destileriju vode njeni osnivači sa svojim prijateljima, koji su
-              eksperti tehnologije proizvodnje rakija.
+              Krenite tajanstvenim putem koji vodi od drveta do čašice zlatnog
+              napitka na vašem stolu!
             </p>
+          </div>
+          <div class="col-md-4 tekst" id="snippet" onclick="skok2()">
+            <h3 class="text-center mb-3 mt-3">Galerija</h3>
             <p class="text-center">
-              Sagu o destileriji FrontEnd započinju je njeni vlasnici i osnivači
-              2018. godine. Magija nastaje na malom imanju u Itebeju gde grupa
-              uspešnih front end developera odlučuje da svoj hobi i strast
-              pretvore u posao. Kroz istorijat destilerije knjiga recepata za
-              spravljanje premium proizvoda pisana je pažljivo. Stranicu po
-              stranicu. Na temelju znanja brižno su selektovane sorte i znalački
-              birane metode.
+              Posetite voćnjak, pokupite koju šaku voća, naložite usijani kazan
+              sve to u našoj galeriji!
+            </p>
+          </div>
+          <div class="col-md-4 tekst" id="snippet" onclick="skok3()">
+            <h3 class="text-center mb-3 mt-3">Kontakt</h3>
+            <p class="text-center">
+              Ožedneli ste, krenula vam voda na usta, požurite u našu kontakt
+              sekciju i rezervišite vašu flašu odmah!
             </p>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- End landing page-->
     <!-- Footer-->
     <footer>
       <div class="container-fluid">
