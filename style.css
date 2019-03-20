@@ -253,3 +253,8 @@ td {
   opacity: 0;
   animation: fadeIn 0.5s ease-in 1 forwards;
 }
+/* Linkovi */
+.logoLink{
+  width: 35%;
+  height: 45%;
+}
