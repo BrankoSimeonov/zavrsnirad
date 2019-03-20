@@ -258,3 +258,11 @@ td {
   width: 35%;
   height: 45%;
 }
+
+.home-bg {
+background: url(img/wallapaper.jpg);
+background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
