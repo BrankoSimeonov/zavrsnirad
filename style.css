@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+html,
+body {
+  background: rgb(19, 19, 19);
+  font-family: "Poppins", sans-serif;
+  margin: 60px 0 0 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.7;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.navbar-brand img {
+  height: 5rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+  margin: 0 15px;
+  transition: 0.5s;
+}
+.active {
+  color: rgb(241, 192, 86) !important;
+}
+ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+  color: #fff !important;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(241, 192, 86);
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: right;
+  transform: scaleX(1);
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(241, 192, 86);
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+ul li a:hover::after {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+/* landing page */
+.wrap {
+  background-image: url(img/img-landing.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+}
+/*tekst section*/
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h3,
+h3 {
+  color: rgb(241, 192, 86);
+}
+.tekst {
+  color: rgb(245, 234, 208);
+}
+/*footer*/
+footer a {
+  color: rgb(245, 234, 208);
+}
+footer svg.svg-inline--fa {
+  font-size: 2.2rem;
+  margin: 1.2rem 0.3rem 0 0;
+  color: rgb(245, 234, 208);
+}
+footer svg.svg-inline--fa:hover {
+  color: rgb(241, 192, 86)!important;
+}
+hr.socket {
+  width: 100%;
+  border-top: 0.2rem solid #666b71;
+  margin-top: 2.5rem;
+}
+/*proizvodi*/
+
+.wrapper {
+  /*height: 100vh;*/
+  padding: 10px;
+  margin: 20px;
+}
+.proizvodiText {
+  color: white;
+  text-indent: 3em;
+}
+
+#snippet:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 0px 2px rgb(241, 192, 86);
+  -moz-box-shadow: inset 0px 0px 0px 2px rgb(241, 192, 86);
+  box-shadow: inset 0px 0px 0px 2px rgb(241, 192, 86);
+  transition: box-shadow 0.6s ease-in-out;
+}
+
+#error {
+  font-size: 10vw;
+}
+
+.centriranje {
+  display: flex;
+  justify-content: center;
+}
+/*css za login*/
+#forma {
+  border-radius: 10px;
+  border: 2px solid rgb(241, 192, 86);
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+}
+
+#Textarea1 {
+  text-align: justify;
+  white-space: normal;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#disclaimer {
+  text-align: center;
+  margin: 0%;
+  color: rgb(241, 192, 86);
+}
+
+textarea[name="textpolje"] {
+  resize: none;
+}
+#reset {
+  float: right;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+td {
+  vertical-align: bottom;
+  text-align: center;
+}
+/*kraj login stil*/
+.grow img {
+  opacity: 0.5;
+}
+
+.grow img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.linktext {
+  color: rgb(241, 192, 86);
+}
+
+/* contact page */
+.btn {
+  background: rgb(245, 234, 208);
+  border: 1px solid rgb(245, 234, 208);
+  color: #000 !important;
+}
+.btn:hover {
+  background: rgb(241, 192, 86);
+  color: #000 !important;
+  border: 1px solid rgb(241, 192, 86);
+}
+.btn:disabled {
+  background: rgb(245, 234, 208);
+  border: 1px solid rgb(245, 234, 208);
+  color: #000 !important;
+}
+.mail {
+  color: rgb(245, 234, 208);
+}
+.mail:hover {
+  color: rgb(241, 192, 86);
+}
+
+/*gallery*/
+.wraper {
+  max-width: 920px;
+  margin: auto;
+  border: #fff solid 3px;
+  background: #fff;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+.imgs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  cursor: pointer;
+}
+
+/* animation*/
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+/* Linkovi */
+.logoLink{
+  width: 35%;
+  height: 45%;
+}
+
+.home-bg {
+background: url(img/wallapaper.jpg);
+background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.formback{
+background:rgba(0,0,0,0.6);
+}

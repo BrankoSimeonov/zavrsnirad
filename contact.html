@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="rakija" content="proizvodnja rakije, konzumiranje rakije, rakija, adresa, telefon, email, komentar">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="java.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/fav-icon.png"/>
+    <title>Kontakt</title>
+  
+</head>
+<body onload="func2()">
+<!-- Navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="naslovna.html"><img src="img/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link " href="naslovna.html">naslovna</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link " href="proizvodi.html">proizvodi</a></li>
+                    <li class="nav-item"><a class="nav-link " href="galerija.html">galerija</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link " href="onama.html">o nama</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="linkovi.html">linkovi</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+<!-- End Navigation-->
+
+<div class="container-fluid tekst">
+<!--map-->
+
+  <iframe class="w-100 mt-3" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6666.180420044627!2d20.394882359363628!3d45.37425752928737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1552467796650" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+ 
+<!--Section-->
+
+<section class="container mb-4">
+
+<!--Section heading-->
+
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Kontaktirajte nas</h2>
+
+<!--Section description-->
+
+  <p class="text-center w-responsive mx-auto mb-3">Ukoliko imate pitanje pošaljite nam poruku direktno.</p>
+
+  <div class="row">
+      <div class="col-md-9 mb-md-0 mb-5 mt-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Ime</label>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Email</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Predmet poruke</label>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Tekst poruke</label>
+                      </div>
+                  </div>
+              </div>
+          </form>
+
+          <div class="text-center text-md-center">
+              <a class="btn btn-primary w-50" onclick="document.getElementById('contact-form').submit();skok4();">Pošalji</a>
+          </div>
+          <div class="status"></div>
+      </div>
+
+      <!--tel. mail-->
+
+      <div class="col-md-3 text-center">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Dr Kornela Radulovića 18, Zrenjanin</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+ 01 234 567 89</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <i class="fas fa-envelope mt-4 fa-2x"></i>
+                <p><a class="mail" href="#">contact@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+</div>
+  <!-- End landing page-->
+<!-- Footer-->
+<footer>
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="socket">
+        <p class="tekst">Copyright&copy; Grupa I 2019.</p> 
+        
+    </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->   
+</body>
+</html>
