@@ -11,7 +11,7 @@ function toggleSelect() {
   var isChecked = document.getElementById("defaultCheck1").checked;
   document.getElementById("ime").disabled = !isChecked;
   document.getElementById("password").disabled = !isChecked;
-  document.getElementById("email").disabled = !isChecked;
+
   document.getElementById("sub").disabled = !isChecked;
   document.getElementById("reset").disabled = !isChecked;
 
@@ -22,32 +22,24 @@ function toggleSelect() {
 function locstormake() {
   var ime = document.getElementById("ime").value;
   var password = document.getElementById("password").value;
-  var email = document.getElementById("email").value;
 
   localStorage.setItem("ime", ime);
   localStorage.setItem("password", password);
-  localStorage.setItem("email", email);
 }
 
 //lock store get
 function localstorget() {
   var ime = localStorage.getItem("ime");
   var password = localStorage.getItem("password");
-  var email = localStorage.getItem("email");
 
-  document.getElementById("pText").innerHTML =
-    ime + "  " + password + " " + email;
+  document.getElementById("pText").innerHTML = ime + "  " + password;
 }
 
 function onsub() {
   var ime = document.getElementById("ime").value;
   var password = document.getElementById("password").value;
-  var email = document.getElementById("email").value;
-  if (
-    (ime == null || ime == "",
-    password == null || password == "",
-    email == null || email == "")
-  ) {
+
+  if ((ime == null || ime == "", password == null || password == "")) {
   } else {
     location.href = "naslovna.html";
   }
@@ -58,12 +50,10 @@ $(document).ready(function() {
     e.preventDefault();
     var name = $("#ime").val();
     var pass = $("#password").val();
-    var email = $("#email").val();
+
     if (!(name == "" || pass == "" || email == "")) {
       $("#submitdata").empty();
-      $("#submitdata").append(
-        "Name: " + name + "<br/>Email: " + pass + "<br/>Message: " + msg
-      );
+      $("#submitdata").append("Name: " + name + pass + "<br/>Message: " + msg);
     } else {
       alert("Molimo Vas popunite sva polja!");
     }
@@ -80,9 +70,8 @@ function func1() {
 //kontakt ucitava ls
 function func2() {
   var ime = localStorage.getItem("ime");
-  var email = localStorage.getItem("email");
+
   document.getElementById("name").value = ime;
-  document.getElementById("email").value = email;
 }
 
 // funkcije za navigaciju na prvoj strani
